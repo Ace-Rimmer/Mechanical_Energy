@@ -1,6 +1,7 @@
 package com.Snappy.ME;
 
 import com.Snappy.ME.blocks.ModBlocks;
+import com.Snappy.ME.core.handler.LocalizationHandler;
 import com.Snappy.ME.core.proxy.CommonProxy;
 import com.Snappy.ME.helpers.References;
 
@@ -32,6 +33,7 @@ public class Mechanical_Energy {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		
+		LocalizationHandler.init();
 		ModBlocks.init();
 		
 	}

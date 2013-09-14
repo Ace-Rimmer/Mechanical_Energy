@@ -7,5 +7,6 @@ public class References {
 	public static final String VERSION = "0.0.1";
 	public static final String CLIENT_PROXY_LOCATION = "com.Snappy.ME.core.proxy.ClientProxy";
 	public static final String SERVER_PROXY_LOCATION = "com.Snappy.ME.core.proxy.CommonProxy";
-
+	public static final String LANGUAGE_LOCATION = "/assets/mechanicalenergy/lang/";
+	//C:\Developement\source\Mechanical_Energy\ME_resources\assets\mechanicalenergy\lang
 }
