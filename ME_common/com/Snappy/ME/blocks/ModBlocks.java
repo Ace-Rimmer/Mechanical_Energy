@@ -1,5 +1,6 @@
 package com.Snappy.ME.blocks;
 
+import com.Snappy.ME.helpers.BlockIDs;
 import com.Snappy.ME.helpers.MyStrings;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -11,7 +12,9 @@ public class ModBlocks {
 	
 	public static void init() {
 		
-		BaseBlock = new BaseBlock(3000);
+		//this is where all block, te, item registries occur
+		
+		BaseBlock = new BaseBlock(BlockIDs.BASEBLOCK_ID);
 		
 		GameRegistry.registerBlock(BaseBlock, MyStrings.BASEBLOCK_NAME);
 	}

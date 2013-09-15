@@ -1,6 +1,9 @@
 package com.Snappy.ME;
 
+import java.io.File;
+
 import com.Snappy.ME.blocks.ModBlocks;
+import com.Snappy.ME.core.handler.ConfigurationHandler;
 import com.Snappy.ME.core.handler.LocalizationHandler;
 import com.Snappy.ME.core.proxy.CommonProxy;
 import com.Snappy.ME.helpers.References;
@@ -33,6 +36,7 @@ public class Mechanical_Energy {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		
+		ConfigurationHandler.init(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + References.MODID + ".cfg"));
 		LocalizationHandler.init();
 		ModBlocks.init();
 		

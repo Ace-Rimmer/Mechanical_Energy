@@ -25,10 +25,13 @@ public class BaseBlock extends Block {
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister iconregister) {
 		
+		//sets the generic texture for block from file. can be copied/pasted.
 		blockIcon = iconregister.registerIcon(String.format("%s:%s", References.MODID.toLowerCase(), getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
 	}
 	
 	protected String getUnwrappedUnlocalizedName(String name) {
+		
+		//parses out unlocalized name of block
 		return name.substring(name.indexOf(".") + 1); 
 	}
 
